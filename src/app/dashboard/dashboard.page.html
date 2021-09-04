@@ -1,0 +1,94 @@
+<ion-header translucent="true">
+</ion-header>
+
+<ion-content>
+  <div class="root-container">
+    <div class="centered-container">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div>
+              <h1 class="title">Choose your concern</h1>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size-sm="12" size-xs="12" size-md="6" size-lg="6" size-xl="6">
+              <ion-card>
+                <div class="flex-center">
+                  <img class="image-style" src="../../assets/images/report.svg" />
+                </div>
+                <ion-card-header>
+                  <ion-card-title>Report</ion-card-title>
+                  <ion-card-subtitle>Report something like accidents, violations etc.</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-button expand="block" color="tertiary" (click)="redirectToReportForm()">Create a report</ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+          <ion-col size-sm="12" size-xs="12" size-md="6" size-lg="6" size-xl="6">
+              <ion-card>
+                <div class="flex-center">
+                  <img class="image-style" src="../../assets/images/request.svg" />
+                </div>
+                <ion-card-header>
+                  <ion-card-title>Send a Request</ion-card-title>
+                  <ion-card-subtitle>Request something from us for example future improvements to community or aid.</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-button expand="block" color="tertiary" (click)="redirectToRequestForm()">Create a request</ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+          <ion-col size-sm="12" size-xs="12" size-md="6" size-lg="6" size-xl="6">
+              <ion-card>
+                <div class="flex-center">
+                  <img class="image-style" src="../../assets/images/help.svg" />
+                </div>
+                <ion-card-header>
+                  <ion-card-title>Ask for help</ion-card-title>
+                  <ion-card-subtitle>Use this for emergency purposes and serious help only!</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-button expand="block" color="tertiary" (click)="redirectToHelpForm()">Ask for help</ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+          <ion-col size-sm="12" size-xs="12" size-md="6" size-lg="6" size-xl="6">
+              <ion-card>
+                <div class="flex-center">
+                  <img class="image-style" src="../../assets/images/feedback.svg" />
+                </div>
+                <ion-card-header>
+                  <ion-card-title>Give Feedback</ion-card-title>
+                  <ion-card-subtitle>Give us your thoughts about our performance and community status.</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-button expand="block" color="tertiary" (click)="redirectToFeedbackForm()">Give a Feedback</ion-button>
+                </ion-card-content>
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div>
+              <p class="footer">This kiosk is made and must be used by it purpose only. Pranks and other inappropriate behaviors are punishable by law.</p>
+              <p class="footer-copyright">&copy; Copyright 2021 Daryl John Tadeo</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>  
+  </div>
+</ion-content>

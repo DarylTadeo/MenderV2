@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard" (click)="dismiss()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>FEEDBACK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="root-container">
+    <div class="centered-container">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div class="feedback-form">
+              <ion-item>
+                <ion-label position="floating">Fullname</ion-label>
+                <ion-input [(ngModel)]="name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Write your Feedback</ion-label>
+                <ion-textarea [(ngModel)]="feedback" rows="5" cols="20"></ion-textarea>
+              </ion-item>
+              <ion-button expand="block" color="tertiary" class="tertiary-button" (click)="submitFeedback()">Submit Feedback</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>  
+  </div>
+</ion-content>

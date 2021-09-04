@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap");
+
+$base-color: #f29629;
+$secondary-color: #333298;
+
+.root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-container {
+  width: 95%;
+}
+
+.feedback-form {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}

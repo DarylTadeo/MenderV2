@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'report-form',
+    loadChildren: () => import('./modals/report-form/report-form.module').then( m => m.ReportFormPageModule)
+  },
+  {
+    path: 'help-form',
+    loadChildren: () => import('./modals/help-form/help-form.module').then( m => m.HelpFormPageModule)
+  },
+  {
+    path: 'request-form',
+    loadChildren: () => import('./modals/request-form/request-form.module').then( m => m.RequestFormPageModule)
+  },
+  {
+    path: 'feedback-form',
+    loadChildren: () => import('./modals/feedback-form/feedback-form.module').then( m => m.FeedbackFormPageModule)
+  },
 ];
 
 @NgModule({
