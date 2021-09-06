@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -65,10 +65,10 @@
     "ts-node": "~8.3.0",
     "tslib": "^2.2.0",
     "typescript": "~4.2.4",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "enhanced-resolve": "^3.3.0"
   },
   "devDependencies": {
-    "enhanced-resolve": "^3.3.0"
   },
   "description": "Bridge 360 Examination App"
 }
