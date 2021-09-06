@@ -1,0 +1,1 @@
+ionic serve --port $PORT --nobrowser -nolivereload --no-open
